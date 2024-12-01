@@ -34,7 +34,7 @@ demoFixtureTest(
   }
 );
 
-test.only("demo pom login and profile", async ({ page }) => {
+test("demo pom login and profile", async ({ page }) => {
   await page.goto("https://demoqa.com/login");
   const loginpage = new LoginPage(page);
   await loginpage.login("demoqa", "Welcome1!");
